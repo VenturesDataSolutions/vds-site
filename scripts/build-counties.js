@@ -43,7 +43,7 @@ async function main() {
   const text = await fetchText(SOURCE_URL);
   const counties = parseCounties(text);
   if (counties.length !== 3143) {
-    throw new Error(`Expected 3143 counties after filtering territories, got ${counties.length}. Census source format may have changed â check ${SOURCE_URL}`);
+    throw new Error(`Expected 3143 counties after filtering territories, got ${counties.length}. Census source format may have changed — check ${SOURCE_URL}`);
   }
   const json = JSON.stringify(counties, null, 2);
 

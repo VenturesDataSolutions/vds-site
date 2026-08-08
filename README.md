@@ -25,7 +25,7 @@ The Worker in `worker/` is deployed independently of the static site, using `wra
 ## Running the tests locally
 
 ```bash
-node tests/run-all.js # static site + county dataset
+node tests/run-all.js       # static site + county dataset
 node worker/test/run-all.js # Worker business logic
 ```
 
